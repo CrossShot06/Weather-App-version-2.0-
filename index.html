@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="weather-app">
+        <div class="left-half">
+            <div class="top-half">
+                <p>the weather</p>    
+            </div>
+            <div class="bottom-half">
+                <div class="temperature">
+                    <p class="temperature temp-text">16°C</p>
+                </div>
+                <div class="name-time">
+                    <p class="city">London</p>
+                    <br>
+                    <p class="date-time">13:00 - Friday 9.10.2021</p>
+                </div>
+                <div class="weather-mini">
+                    <img src="./images/clear.png" alt="" class="weather-icon">
+                    <p class="weather-type">partly cloudy</p>   
+                </div>
+            </div>
+        </div>
+        <div class="right-half">
+            <input type="text" class="search" placeholder="Search Location...">
+            <button class="search-btn"><img src="./images/search.png"></button>
+            <p class="heading">Weather Details</p>
+            <div class="details">
+                <div class="col">
+                    <p class="humidity">Humidity</p>
+                    <p class="humidity humidity-value">50%</p>
+                </div> 
+                <div class="col 1">
+                    <p class="wind-speed">Wind Speed</p>
+                    <p class="wind-speed wind-value">15 km/h</p>
+                </div>   
+                <div class="col 2">
+                    <p class="temp-max/min">Temperature Max/Min</p>
+                    <p class="temp-max/min max-min-value">32/17</p>
+                </div>
+                <div class="col 3">
+                    <p class="feels-like">Feels-like</p>
+                    <p class="feels-like feels-like-value">very bad</p>
+                </div>    
+                <div class="col 4">
+                    <p class="sunrise">Sunrise</p>
+                    <p class="sunrise sunrise-time">5:30</p>
+                </div>
+                <div class="col 5">
+                    <p class="sunset">Sunset</p>
+                    <p class="sunset sunset-time">6:00</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

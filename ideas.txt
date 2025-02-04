@@ -1,0 +1,11 @@
+weather details:
+    1 temperature
+    2 humidity
+    3 wind speed
+    4 wind direction
+    5 temp-max
+    6 temp-min
+    7 sunrise
+    8 sunset
+    9 precipitation
+    10 aqi

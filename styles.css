@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+body{
+    background-image: url(./images/clear-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: fixed;
+    background-size: cover;
+    color: white;
+
+}
+.weather-app{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+}
+.left-half{
+    height: 100vh;
+    width: 65vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-half{
+    height: 100vh;
+    width: 35vw;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    background: rgba(110,110,110,0.25);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.3);
+    backdrop-filter:blur(10px);
+}
+.top-half{
+    padding-top:2rem;
+    padding-left:1.5rem;
+    font-size: 1.5rem;
+}
+.bottom-half{
+    display: flex;
+    gap:3rem;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-left:0.75rem;
+}
+.temperature{
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 1.25rem;
+}
+.name-time{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    font-size: 1.25rem;
+    padding-top: 2.5rem;
+    font-weight: 600;
+}
+.city{
+    font-size: 2rem;
+}
+.weather-icon{
+    width:5rem;
+}
+.weather-mini{
+    padding-bottom:0rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+input{
+    background: none;
+    margin-left: 2.5rem;
+    margin-top: 5rem;
+    font-size: 1.25rem;
+    border:none;
+    border-bottom:1px #ccc solid;
+    padding:0 1em 0.5em 0;
+    width:80%;
+    color:#fff;
+}
+input:focus{
+    outline: none;
+
+}
+input::placeholder{
+    color:#ccc;
+}
+button{
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: #fa6d1b;
+    padding:1.5em;
+    margin: 0;
+    border:none;
+    outline: none;
+    color:#fff;
+    cursor:pointer;
+    font-size:1.2em;
+    transition: 0.4s;
+
+}
+button:hover{
+    background: #fff;
+    color:#000;
+}
+.heading{
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.details{
+    height: 30rem;
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+    margin-right:1.5rem;
+    font-size: 1.175rem;
+    font-weight: 600;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.col{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+    html,body{
+        overflow: auto;
+    }
+    body{
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .weather-app {
+        flex-direction: column; /* Stack the left and right halves vertically */
+        height: auto; /* Allow the height to adjust based on content */
+        min-height: 100vh;
+    }
+
+    .left-half, .right-half {
+        width: 100%; /* Make both halves take up the full width */
+        height: auto;
+    }
+
+    .left-half {
+        padding-bottom: 1rem; /* Add some spacing between the two halves */
+        min-height: 50vh;
+    }
+
+    .right-half {
+        padding-top: 1rem; /* Add some spacing between the two halves */
+        min-height: 50vh;
+    }
+
+    .bottom-half {
+        flex-direction: column; /* Stack the temperature, city, and weather icon vertically */
+        align-items: flex-start; /* Align items to the left */
+        gap: 1rem; /* Add some spacing between the stacked items */
+    }
+
+    .temperature, .name-time, .weather-mini {
+        padding-top: 0; /* Remove unnecessary padding */
+    }
+
+    .details {
+        height: auto; /* Allow the height to adjust based on content */
+        margin-top: 1rem; /* Adjust the top margin */
+        gap:0.5rem;
+    }
+
+    .col {
+        gap: 0.5rem; /* Add some spacing between the stacked items */
+    }
+}
+@media screen and (max-width: 500px) {
+    html{
+        font-size: 12px;
+    }
+}
