@@ -49,6 +49,7 @@ async function checkWeather(city) {
         weatherIcon.src = `images/${weatherCondition}.png`;
 
         document.body.style.backgroundImage=`url(./images/${weatherCondition}-bg.jpg)`
+        document.querySelector(".weather-type").innerHTML=`${weatherCondition}`;
 
         const timezone=data.timezone;
         const unixTime=data.dt+timezone;

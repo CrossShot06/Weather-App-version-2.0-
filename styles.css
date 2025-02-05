@@ -142,44 +142,44 @@ button:hover{
         background-size: cover;
     }
     .weather-app {
-        flex-direction: column; /* Stack the left and right halves vertically */
-        height: auto; /* Allow the height to adjust based on content */
+        flex-direction: column; 
+        height: auto; 
         min-height: 100vh;
     }
 
     .left-half, .right-half {
-        width: 100%; /* Make both halves take up the full width */
+        width: 100%;
         height: auto;
     }
 
     .left-half {
-        padding-bottom: 1rem; /* Add some spacing between the two halves */
+        padding-bottom: 1rem; 
         min-height: 50vh;
     }
 
     .right-half {
-        padding-top: 1rem; /* Add some spacing between the two halves */
+        padding-top: 1rem; 
         min-height: 50vh;
     }
 
     .bottom-half {
-        flex-direction: column; /* Stack the temperature, city, and weather icon vertically */
-        align-items: flex-start; /* Align items to the left */
-        gap: 1rem; /* Add some spacing between the stacked items */
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 1rem; 
     }
 
     .temperature, .name-time, .weather-mini {
-        padding-top: 0; /* Remove unnecessary padding */
+        padding-top: 0; 
     }
 
     .details {
-        height: auto; /* Allow the height to adjust based on content */
-        margin-top: 1rem; /* Adjust the top margin */
-        gap:0.5rem;
+        height: auto; 
+        margin-top: 1rem;
+        gap:1.5rem;
     }
 
     .col {
-        gap: 0.5rem; /* Add some spacing between the stacked items */
+        gap: 0.5rem; 
     }
 }
 @media screen and (max-width: 500px) {
